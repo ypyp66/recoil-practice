@@ -1,8 +1,4 @@
-import {
-  useRecoilStateLoadable,
-  useRecoilValue,
-  useRecoilValueLoadable,
-} from "recoil";
+import { useRecoilStateLoadable, useRecoilValueLoadable } from "recoil";
 import { recoilStarCountState } from "../atoms/recoilStar";
 
 function RecoilStarCount() {
