@@ -1,5 +1,5 @@
 import { useRecoilValue } from "recoil";
-import { countState } from "../recoil/count";
+import { countState } from "../atoms/count";
 
 function ReadOnlyCounter() {
   const count = useRecoilValue(countState);

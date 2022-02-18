@@ -1,20 +1,16 @@
 import React from "react";
-import Counter from "./components/Counter";
-import ReadOnlyCounter from "./components/ReadOnlyCounter";
-import RecoilStarCount from "./components/RecoilStarCount";
-import SelectorCount from "./components/SelectorCount";
+import Color from "./components/Color/Color";
+import ColorPicker from "./components/ColorPicker";
+import Grid from "./components/Grid";
+import Stats from "./components/Stats";
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
-    <>
-      {/* <Counter />
-      <ReadOnlyCounter /> 
-      <SelectorCount />*/}
-      <React.Suspense fallback={<div>로딩중입니다.</div>}>
-        <RecoilStarCount />
-      </React.Suspense>
-    </>
+    <div className="App">
+      <ColorPicker />
+      <Grid />
+      <Stats />
+    </div>
   );
 }
-
-export default App;
